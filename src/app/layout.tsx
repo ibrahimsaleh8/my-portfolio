@@ -27,7 +27,7 @@ export default function RootLayout({
         <ManageLoading>
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="dark"
             enableSystem
             disableTransitionOnChange>
             <MainHeader />
