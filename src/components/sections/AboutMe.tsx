@@ -12,13 +12,15 @@ export default function AboutMe() {
       <div className="flex flex-col gap-4 mt-3">
         {/* TOP */}
         <div className="flex items-center gap-7 flex-wrap">
-          <Image
-            src={myImage}
-            alt="My Image"
-            width={1000}
-            height={1000}
-            className="w-44 h-44 object-cover object-top-left rounded-full"
-          />
+          <div className="w-44 h-44 dark:bg-[#131313] bg-[#dbdbdb] rounded-full">
+            <Image
+              src={myImage}
+              alt="My Image"
+              width={1000}
+              height={1000}
+              className="w-44 h-44 object-cover object-top-left rounded-full"
+            />
+          </div>
 
           <div className="flex flex-col gap-4">
             <div className="text-lg ">
