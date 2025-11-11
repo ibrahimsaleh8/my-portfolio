@@ -29,6 +29,7 @@ export default function ProjectCard({
             width={1000}
             height={1000}
             className="w-full lg:h-52 h-fit object-cover"
+            loading="eager"
           />
         </div>
         <div className="flex flex-col gap-4">
