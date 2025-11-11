@@ -4,7 +4,7 @@ import RollingTextWithIcon from "../RollingLinkWithIcon";
 
 export default function MyExperiences() {
   return (
-    <div className="p-6 !overflow-x-hidden flex flex-col gap-6">
+    <div className="md:p-6 p-4 !overflow-x-hidden flex flex-col gap-6">
       <SectionHeader title="My Experience" />
 
       <div className="flex flex-col gap-4">

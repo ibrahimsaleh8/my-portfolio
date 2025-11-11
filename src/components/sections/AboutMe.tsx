@@ -3,44 +3,50 @@ import SectionHeader from "./SectionHeader";
 import { TextAnimate } from "../ui/text-animate";
 import MyTechnologies from "./MyTechnologies";
 import { motion } from "framer-motion";
-import myImage from "@images/my-image.webp";
+import myImage from "@images/Myimage.jpg";
 import Image from "next/image";
 export default function AboutMe() {
   return (
-    <div className="p-6 !overflow-x-hidden">
+    <div className="md:p-6 p-4 !overflow-x-hidden">
       <SectionHeader title="About Me" />
       <div className="flex flex-col gap-4 mt-3">
         {/* TOP */}
-        <div className="flex flex-col justify-between gap-4 flex-wrap">
+        <div className="flex items-center gap-7 flex-wrap">
           <Image
             src={myImage}
             alt="My Image"
             width={1000}
             height={1000}
-            className="w-28 h-28 object-cover object-top rounded-full"
+            className="w-44 h-44 object-cover object-top-left rounded-full"
           />
 
-          <motion.a
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="w-fit"
-            transition={{ duration: 0.3, delay: 0.4 }}
-            target="_blank"
-            href="https://drive.google.com/file/d/1wY0mYwjgi98Vr2KtrKmPxrnlXAd-z37V/view?usp=drive_link">
-            <TextAnimate
-              delay={0.3}
-              animation="blurInUp"
-              startOnView={false}
-              by="character"
-              as={"button"}
-              className="bg-black text-white rounded-2xl dark:bg-white dark:text-black border-2 dark:border-white border-black hover:bg-transparent duration-300 dark:hover:bg-transparent hover:text-black dark:hover:text-white text-sm px-4 py-2 font-bold"
-              once>
-              Show My CV
-            </TextAnimate>
-          </motion.a>
+          <div className="flex flex-col gap-4">
+            <div className="text-lg ">
+              <p className="font-medium">Ibrahim Saleh Ibrahim</p>
+              <p className="font-bold">Frontend Developer - Nextjs</p>
+            </div>
+            <motion.a
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="w-fit"
+              transition={{ duration: 0.3, delay: 0.4 }}
+              target="_blank"
+              href="https://drive.google.com/file/d/1wY0mYwjgi98Vr2KtrKmPxrnlXAd-z37V/view?usp=drive_link">
+              <TextAnimate
+                delay={0.3}
+                animation="blurInUp"
+                startOnView={false}
+                by="character"
+                as={"button"}
+                className="bg-black text-white rounded-2xl dark:bg-white dark:text-black border-2 dark:border-white border-black hover:bg-transparent duration-300 dark:hover:bg-transparent hover:text-black dark:hover:text-white text-sm px-4 py-2 font-bold"
+                once>
+                Show My CV
+              </TextAnimate>
+            </motion.a>
+          </div>
         </div>
         {/*Text */}
-        <div className="flex flex-col gap-5 md:text-2xl text-xl font-medium leading-[1.4]">
+        <div className="flex flex-col gap-5 md:text-2xl text-xl font-medium leading-[1.5]">
           <TextAnimate
             animation="fadeIn"
             once={true}

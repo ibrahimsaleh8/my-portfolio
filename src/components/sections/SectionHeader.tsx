@@ -8,7 +8,7 @@ export default function SectionHeader({ title }: { title: string }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.4, delay: 0.3 }}
-      className="sm:overflow-x-hidden flex items-center justify-between flex-wrap">
+      className="sm:overflow-x-hidden flex items-center justify-between flex-wrap mb-2">
       <RollingText delay={0.2} title={title} classes="sm:text-3xl text-2xl" />
 
       <SheetClose asChild>

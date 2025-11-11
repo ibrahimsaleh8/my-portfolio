@@ -22,7 +22,7 @@ export default function ProjectCard({
   return (
     <div className="flex flex-col gap-4 max-h-full">
       <div className="flex gap-4 flex-wrap">
-        <div className="lg:w-96 lg:h-52 h-fit w-full rounded-2xl overflow-hidden border">
+        <div className="lg:w-96 lg:h-52 h-fit w-full rounded-2xl overflow-hidden border dark:bg-[#131313] bg-[#dbdbdb]">
           <Image
             src={imageUrl}
             alt={imageAlt}

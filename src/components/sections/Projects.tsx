@@ -12,7 +12,7 @@ import universitySystemImage from "@images/projects/University Management System
 
 export default function Projects() {
   return (
-    <div className="p-6 !overflow-x-hidden">
+    <div className="md:p-6 p-4 !overflow-x-hidden">
       <SectionHeader title="Projects" />
 
       <Accordion defaultValue={"project-1"} type="single">
