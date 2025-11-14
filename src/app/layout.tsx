@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   title: "Ibrahim Saleh - Portfolio",
   description:
     "Explore the portfolio of Ibrahim Saleh, a passionate Frontend Developer specializing in Next.js, React, and modern web technologies. Discover projects, experience, and creative UI/UX designs built with performance and precision.",
+  verification: {
+    google: "SrI98gSOZNrMvxTByRc926pb0un84BxxbVxc0PAUfuM",
+  },
 };
 
 export default function RootLayout({
