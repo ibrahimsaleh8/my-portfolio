@@ -8,7 +8,8 @@ import SectionHeader from "./SectionHeader";
 import ProjectCard from "./ProjectCard";
 import gamingStoreImage from "@images/projects/gameingStore.webp";
 import megazaStoreImage from "@images/projects/MegazaStore.webp";
-import universitySystemImage from "@images/projects/University Management System.webp";
+import universitySystemImage from "@images/projects/University_Management_System.webp";
+import optimoImage from "@images/projects/Optimo.webp";
 
 export default function Projects() {
   return (
@@ -90,6 +91,29 @@ Next.js 15, TypeScript, Prisma, PostgreSQL, Tailwind CSS, Shadcn UI, React Query
               videoLink="https://www.linkedin.com/posts/ibrahim-saleh-dev_universitymanagement-webdevelopment-nextjs-activity-7375186042393489408-4euh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8yZigBd20_s3xE1AX3NVXezXx69C7vAlg"
               imageAlt="University Management System Image"
               imageUrl={universitySystemImage}
+            />
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="project-4">
+          <AccordionTrigger className="sm:!text-2xl !text-xl !flex !items-center !gap-1 !text-left">
+            <div className="flex items-center gap-4">
+              <span className="font-bold">4.</span>{" "}
+              <span>Optimo - Image Compression & Conversion</span>
+            </div>
+          </AccordionTrigger>
+          <AccordionContent className="overflow-hidden pt-4">
+            <ProjectCard
+              description="
+Optimo is a lightweight and efficient web app for compressing images and converting them between formats while maintaining optimal quality. Users can adjust compression levels to reduce file size without losing much visual fidelity. The tool supports multiple image formats and provides a fast, intuitive interface for developers, designers, and content creators.
+      "
+              previewLink="https://optimizer-frontend.vercel.app/"
+              repoLink="https://github.com/ibrahimsaleh8/optimo-backend"
+              techStack="
+Node.js, Express.js, Sharp, Next js, Tailwind CSS, Shadcn UI,Vercel"
+              videoLink="https://www.linkedin.com/posts/ibrahim-saleh-dev_%D8%A7%D9%84%D8%AD%D9%85%D8%AF%D9%84%D9%84%D9%87-%D8%A7%D9%88%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%84%D9%8A%D8%A7-%D8%A8-node-js-%D9%88-express-activity-7403763016099569664-orZm?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC8yZigBd20_s3xE1AX3NVXezXx69C7vAlg"
+              imageAlt="Optimo Project Screenshot"
+              imageUrl={optimoImage}
             />
           </AccordionContent>
         </AccordionItem>
