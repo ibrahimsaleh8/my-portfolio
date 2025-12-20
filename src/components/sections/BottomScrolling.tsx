@@ -14,7 +14,7 @@ const scrollingData = [
 
 export default function BottomScrolling() {
   return (
-    <ScrollVelocityContainer className="sm:text-4xl text-2xl font-bold bg-[#D8FD91] text-black mt-auto sm:py-4 py-3">
+    <ScrollVelocityContainer className="sm:text-4xl text-2xl font-bold bg-[#D8FD91] text-black mt-auto py-3">
       <ScrollVelocityRow baseVelocity={4} direction={1}>
         {scrollingData.map((txt, i) => (
           <p className="ml-14 flex items-center gap-6" key={i}>

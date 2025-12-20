@@ -49,7 +49,7 @@ export default function ContactmeForm() {
         handleSubmit();
       }}
       className="flex flex-col gap-5">
-      <div className="flex flex-col gap-1.5">
+      <div className="flex flex-col gap-2">
         <Label htmlFor="name-input">Name:</Label>
         <Input
           onChange={(e) => setName(e.target.value)}
@@ -60,7 +60,7 @@ export default function ContactmeForm() {
           placeholder="Name"
         />
       </div>
-      <div className="flex flex-col gap-1.5">
+      <div className="flex flex-col gap-2">
         <Label htmlFor="email-input">Email:</Label>
         <Input
           onChange={(e) => setEmail(e.target.value)}
@@ -71,7 +71,7 @@ export default function ContactmeForm() {
           placeholder="Email"
         />
       </div>
-      <div className="flex flex-col gap-1.5">
+      <div className="flex flex-col gap-2">
         <Label htmlFor="message-input">Message:</Label>
         <Textarea
           onChange={(e) => setMessage(e.target.value)}
@@ -83,7 +83,7 @@ export default function ContactmeForm() {
         />
       </div>
 
-      <Button disabled={loading} className="w-32 flex items-center gap-1">
+      <Button disabled={loading} className="w-32 flex items-center gap-1 h-10">
         {loading ? (
           <>
             <Spinner />

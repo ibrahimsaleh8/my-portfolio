@@ -14,7 +14,7 @@ export default function Home() {
         style={{
           minHeight: "calc(100vh - 12rem)",
         }}
-        className="flex flex-col lg:flex-row gap-10 w-full lg:justify-between md:px-10 px-5 ">
+        className="flex flex-col lg:flex-row pb-10 gap-10 w-full lg:justify-between md:px-10 px-5 ">
         <LeftMainHero firstDelay={firstDelay} />
         <RightMainHero firstDelay={firstDelay} />
       </div>

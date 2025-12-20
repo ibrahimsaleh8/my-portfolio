@@ -7,7 +7,7 @@ import Projects from "./Projects";
 
 export default function RightMainHero({ firstDelay }: { firstDelay: number }) {
   return (
-    <div className="w-full flex flex-col md:pt-44 pt-5 gap-2 sm:pb-0 pb-4">
+    <div className="w-full flex flex-col justify-center gap-2 sm:pb-0 pb-4">
       <TextAnimate
         className="uppercase text-low-text font-bold lg:text-xl text-base tracking-wider"
         animation="slideUp"

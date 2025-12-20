@@ -2,9 +2,9 @@ import { TextAnimate } from "../ui/text-animate";
 
 export default function LeftMainHero({ firstDelay }: { firstDelay: number }) {
   return (
-    <div className="w-full flex flex-col lg:gap-16 gap-10 lg:pt-36 pt-8">
+    <div className="w-full flex flex-col justify-center gap-2 pt-10 md:pt-5 sm:pb-0 pb-4">
       {/* Text */}
-      <div className="xl:text-9xl md:text-7xl text-5xl font-bold capitalize">
+      <div className="xl:text-8xl md:text-7xl text-5xl font-bold capitalize">
         <TextAnimate
           once
           startOnView={false}
