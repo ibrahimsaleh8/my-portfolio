@@ -13,7 +13,7 @@ export default function ManageLoading({ children }: { children: ReactNode }) {
         key={2}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}>
+        transition={{ delay: 2.3 }}>
         {children}
       </motion.div>
     </AnimatePresence>
