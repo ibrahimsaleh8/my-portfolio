@@ -11,8 +11,8 @@ export default function ManageLoading({ children }: { children: ReactNode }) {
       <LoadingPage key={1} />
       <motion.div
         key={2}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ opacity: 0, display: "none" }}
+        animate={{ opacity: 1, display: "block" }}
         transition={{ delay: 2.3 }}>
         {children}
       </motion.div>

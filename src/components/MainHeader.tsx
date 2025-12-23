@@ -26,7 +26,7 @@ export default function MainHeader() {
         />
         <p>Ibrahim</p>
       </motion.div>
-      <ThemeToggleBtn direction="ltr" />
+      <ThemeToggleBtn />
     </header>
   );
 }
